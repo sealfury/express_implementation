@@ -1,4 +1,5 @@
 import { Router, Request, Response, NextFunction } from 'express'
+import { get } from './decorators/routes'
 
 @controller('/')
 class LoginController {
@@ -17,5 +18,5 @@ class LoginController {
         <button>Submit</button>
       </form>
     `)
-  })
+  }
 }
